@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800&family=Raleway:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    max-height: fit-content;
+    display: flex;
+}
+
+input {
+    border: none;
+    height: 50px;
+    width: 90%;
+    font-size: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+input:focus{
+    border: none;
+    outline:none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.tables {
+    height: 620px;
+    width: 30%;
+    overflow-y: scroll;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.items {
+
+    height: 620px;
+    width: 80%;
+    overflow-y: scroll;
+    text-align: center;
+    border-left: 5px solid rgba(12, 12, 12, 0.84);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+}
+#itemSearch{
+    width: 95%;
+}
+table {
+    font-weight: 800;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* overflow-y: scroll; */
+    background-color: #f2f2f2;
+}
+table td,
+table th {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding: 20px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+.newTableItem {
+    border-style: outset;
+    margin: 20px;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 153, 176, 0.05) 0px 5px 10px inset;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.newItemElement {
+    margin: 20px;
+    padding: 10px 10px 20px 10px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px inset;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#modal {
+    display: none;
+    overflow-y: scroll;
+    position: absolute;
+    height: 100vh;
+    width: 90vw;
+    left: 5vw;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    
+}
+.cut{
+    float: right;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;  
+    color: #fff;  
+}
+#modalHeader{
+    background-color: #04AA6D;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.modalHeader-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+#modalHeading{
+    color: #fff;
+    text-transform: capitalize;
+}
+.cutTable{
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #000;
+}
+#modalfooter button{
+    background-color: transparent;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid #fff;
+    outline:none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+#modalfooter button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 100ms;
+    border: 1px solid black;
+}
+.yellow-color{
+    background-color: yellow;
+}
+.notfound,.notfound1{
+    display: none;
+    font-size: 30px;
+}
+@media screen and (max-width:600px) {
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .tables,.items{
+        width: 100%;
+    }
+}
+.type{
+    text-decoration: underline;
+}
+input[type="search"]{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}

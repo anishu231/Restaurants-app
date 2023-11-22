@@ -1,0 +1,101 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External Styling -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- External JS -->
+    <script src="app.js" defer></script>
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Restaurant App</title>
+
+</head>
+
+<body>
+    <!-- Tables Container Start-->
+    <div class="tables">
+        <h2>Tables</h2>
+
+        <input type="search" placeholder="Search Table by No." id="tableSearch"> 
+        <br>
+        <br>
+        <br>
+
+        <div id="newTable" class="allTables">
+            <span class="notfound">
+                Not found
+                <br>
+                Sorry 😞
+            </span>
+        </div>
+        <br>
+
+    </div>
+    <!-- Tables Container End-->
+
+    <!-- Menu Container Start-->
+    <div class="items">
+        <h2>Menu</h2>
+        
+        <input type="search" id="itemSearch" placeholder="Search by Course,or By food name">
+        <br>
+        <br>
+        <br>
+        
+        <div id="newItem" class="allItems">
+            <span class="notfound1">
+               Item is not present in the Menu.
+               <br>
+               Sorry 😞
+            </span>
+        </div>
+        
+        
+    </div>
+    <!-- Menu Container End-->
+
+    <!-- Modal container which triggered after clicking on Table container -->
+    <!-- Start -->
+    <div id='modal' class="modal">
+        <div id="modalHeader" class="modalHeader">
+            <div class="modalHeader-container" id="modalHeader-container">
+                <h1 id='modalHeading'>
+                
+                </h1>
+                <button class="cut">
+                    x
+                </button>
+            </div>
+        </div>
+
+        <div id="modalBody">
+            <table id="tab-bill">
+
+            </table>
+
+        </div>
+
+
+
+        <div id="modalfooter" class="buttons">
+            <h2>Total : <span id="displaytotal"></span>
+            <span>Rs.</span>
+            </h2>
+            <button class="generateBill"> Generate Bill</button>
+        </div>
+
+    </div>
+    <!-- End -->
+
+
+</body>
+
+</html>
